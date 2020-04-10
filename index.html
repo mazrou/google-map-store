@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Google Map </title>
+
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./js/store-data.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+
+</head>
+
+<body>
+
+    <div class="title"> Store locator</div>
+
+    <div class="seartch-container">
+        <div class="seartch">
+            <input type="text" placeholder="Enter zip" id="zip-code-input">
+            <i class="fas fa-search"  onclick="seartchStores() "></i>
+        </div>
+    </div>
+
+    <div class="stores-list-container">
+        <div class="stores-list">
+            
+        </div>
+    </div>
+
+    <div id="map"></div>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcwazb-T7zvceyA4VLWVB-eXvwj-XEUIA&callback=initMap">
+        </script>
+</body>
+
+</html>

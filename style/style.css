@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#map{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.title{
+  z-index: 100;
+  position: absolute;
+  font-size: 88px;
+  font-weight: bold ;
+  color: #333;
+  text-transform: uppercase;
+  top: 100px;
+  left: 100px;
+}
+
+.seartch-container{
+    z-index: 100;
+    position: absolute; 
+    top : 230px;
+    left: 100px;
+    border-radius: 30px;
+    height: 60px;
+    width: 400px;
+    background-color:#454E53;
+    display: flex;
+}
+.seartch{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+   
+}
+#zip-code-input{
+    width: 100%;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+.seartch-container input:focus{
+    outline: none;
+}
+
+.seartch i{
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.stores-list-container{
+    display: flex;
+    z-index: 100;
+    top: 320px;
+    left: 100px;
+    bottom : 20px;
+    position: absolute;
+    width: 400px;
+    border-radius: 30px;
+    background-color: white;
+    overflow-y: hidden;
+    
+}
+
+.store-container{
+    border-bottom: 1px solid #979797;
+    display: flex;
+    cursor: pointer;
+  
+}
+.store-container-background{
+    display: flex;
+    flex-grow: 1;
+    margin: 12px 0;
+    border-radius: 12px;
+    padding: 0 8px;
+}
+
+.store-container-background:hover{
+   
+    background-color: #ccc;
+}
+
+.store-info-name{
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(0,0,0,.87);
+}
+.store-info-window{
+    padding-right: 0px;
+    padding-bottom: 0px;
+    max-width: 654px;
+    max-height: 776px;
+    width: 300px;
+    z-index: 200;
+    position: relative;
+}
+.store-info-status{
+    border-bottom: 1px solid #00000029;
+    margin-top: 6px;
+    padding-bottom: 6px;
+}
+
+.stores-list{
+    flex-grow: 1;
+    overflow-y: scroll;
+      padding: 0 20px;
+    padding-bottom: 20px;
+}
+
+
+.store-phone-number{
+    color: #B5ADAD;
+     margin: 15px 0 ;
+}
+
+.store-address span{
+    display: block;
+}
+
+.store-info-address  , .store-info-phone-number{
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.circle{
+    width: 30px;
+    height: 30px;
+    background-color: #1985A1;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px ;
+}
+.store-address{
+    font-size: 21px;
+    color: #514C4C;
+    margin-top: 30px;
+}
+
+.store-number{
+    width: 30px;
+    height: 30px;
+    background-color: #454E53;
+    border-radius: 50%;
+    color: #B5ADAD;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.store-number-container{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+.store-info-container{
+    flex-grow: 1;
+}
